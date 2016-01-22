@@ -1,4 +1,6 @@
 <?php
+	include_once('Criptografia.class.php');
+
 	class Etapa3
 	{
 		/*
@@ -8,6 +10,7 @@
 		private $resp2;
 		private $emailCriptografado;
 		private $emailDescriptografado;
+		private $criptografia;
 
 
 
@@ -62,6 +65,18 @@
 	        return $this;
 	    }
 
+	    public function getCriptografia()
+	    {
+	    	return $this->criptografia();
+	    }
+
+	    private function setCriptografia($criptografia)
+	    {
+	    	$this->criptografia = $criptografia;
+
+	    	return $this;
+	    }
+
 
 
 
@@ -69,12 +84,20 @@
 	     * MÉTODOS DA CLASSE
 	     */
 	    //Método Construtor
-	    public function __construct($resp1, $resp2)
+	    public function __construct($resp1, $resp2, $emailCriptografado)
 	    {
 	    	$this->setResp1($resp1);
 	    	$this->setResp2($resp2);
-	    	$this->setEmailCriptografado('b3rdcigpi4pv0gp@htmadv.rdb');
-	    	$this->calculaChave();
+	    	$this->setEmailCriptografado($emailCriptografado);
+
+	    	$this->setCriptografia(new Criptografia($this->getResp1(), $this->getResp2()));
+	    	$this->setEmailDescriptografado(
+	    										$this->criptografia->descriptografa(
+	    																				$this->getEmailCriptografado()
+	    																			)
+	    									);
+
+	    	echo "<a href='mailto:{$this->getEmailDescriptografado()}'>Email</a>";
 	    }
 
 	    

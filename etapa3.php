@@ -14,11 +14,13 @@
 </ul>
 
 <p>
-    Sua missão final é desenvolver um algoritmo para descriptografar o e-mail (b3rdcigpi4pv0gp@htmadv.rdb) no qual deverá enviar seu currículo e a as soluções desenvolvidas em cada uma das etapas. 
+    Sua missão final é desenvolver um algoritmo para descriptografar o e-mail (b3rdcigpi4pv0gp@htmadv.rdb) no 
+    qual deverá enviar seu currículo e a as soluções desenvolvidas em cada uma das etapas. 
 </p>
 
 <p>
-    Para cada letra do alfabeto podemos associar um número, por exemplo: a = 1, b = 2, c = 3 até z = 26. Para criptografar o texto foi usada a seguinte regra: 
+    Para cada letra do alfabeto podemos associar um número, por exemplo: a = 1, b = 2, c = 3 até z = 26. Para 
+    criptografar o texto foi usada a seguinte regra: 
 </p>
 
 <ul>
@@ -40,4 +42,6 @@
     <strong>Dica:</strong> para chegar a chave utilizada para criptografar o texto você deverá somar os resultados no primeiro e segundo desafios, pegar as posições 5 e 6 do resultado e invertê-las
 </p>
 
-<?php new Etapa3(104743, 20365011073); ?>
+<?php 
+    new Etapa3(104743, 20365011073, 'b3rdcigpi4pv0gp@htmadv.rdb'); 
+?>
