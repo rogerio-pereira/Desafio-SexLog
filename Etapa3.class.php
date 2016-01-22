@@ -97,7 +97,7 @@
 	    																			)
 	    									);
 
-	    	echo "<a href='mailto:{$this->getEmailDescriptografado()}'>Email</a>";
+	    	echo $this->getEmailDescriptografado();
 	    }
 
 	    

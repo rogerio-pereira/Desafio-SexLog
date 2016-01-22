@@ -29,7 +29,7 @@ Acesse sexlog.com/prova_xxxxxxxx onde xxxxxxxx é o resultado encontrado nesta e
 
 Te esperamos na linha de chegada. Você está quase lá! ;)
 RESPOSTA ETAPA 2
-
+20365011073
 
 
 ETAPA 3
@@ -49,3 +49,6 @@ Para cada letra do alfabeto podemos associar um número, por exemplo: a = 1, b =
 - A pontuação e os espaços não foram criptografados
 
 Dica: para chegar a chave utilizada para criptografar o texto você deverá somar os resultados no primeiro e segundo desafios, pegar as posições 5 e 6 do resultado e invertê-las
+
+RESPOSTA ETAPA 3
+m3contrat4ag0ra@sexlog.com
